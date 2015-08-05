@@ -1,0 +1,20 @@
+{
+  "name": "br-browser-update",
+  "version": "0.0.1",
+  "homepage": "https://github.com/bed-rock/br-browser-update",
+  "main": "br-browser-update.html",
+  "keywords": [
+    "polymer",
+    "bedrock",
+    "browserupdate"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "src",
+    "test",
+    "tests"
+  ]
+}

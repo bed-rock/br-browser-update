@@ -1,0 +1,37 @@
+@import '../../bedrock/scss/variables';
+
+.invisible{
+  display: none;
+}
+
+.modal{
+  background: rgb(240, 240, 240); /* Fallback */
+  background: rgba(255,255,255,0.6);
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0; 
+  z-index: 10;
+  div{
+    max-width: 96rem;
+    text-align: center;
+    margin: 10% auto;
+    width: 80%;
+    .stand-row{
+      margin: 2em 0;
+      width: 100%;
+    } 
+
+    .stand-column{
+      width: 33%;
+      display: inline;
+      a{
+        img{
+          width: 20%;
+          max-width: 100px;
+          margin: 0 auto;
+          filter: grayscale(50%);
+          border: 0;
+        }
+      }
+    }
+  }
+}
