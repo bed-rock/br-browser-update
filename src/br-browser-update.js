@@ -1,4 +1,8 @@
-disableOldVersion = function(lowerThan){
+    function enter(){
+      console.log("entrei");
+    }
+
+    function disableOldVersion(lowerThan){
       var currentBrowser = getCurrentBrowser();      
 
       browserSplit = currentBrowser.split(" ");
@@ -13,7 +17,7 @@ disableOldVersion = function(lowerThan){
 
     }
 
-    getCurrentBrowser = function(){
+    function getCurrentBrowser(){
 
       return (function(){
         var ua= navigator.userAgent, tem, 
