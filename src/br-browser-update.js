@@ -1,8 +1,5 @@
-    function enter(){
-      console.log("entrei");
-    }
-
     function disableOldVersion(lowerThan){
+      pushHtml();
       var currentBrowser = getCurrentBrowser();      
 
       browserSplit = currentBrowser.split(" ");
@@ -38,4 +35,19 @@
 
       })();
 
+    }
+    
+    function pushHtml(){
+      var html = [];
+      html.push('<div class="modal-body">');
+      html.push('<h1>Ops!!</h1>');
+      html.push('<p>Lorem ipsum dolor sit amet</p>');
+      html.push('<div class="stand-row">')
+      html.push(' <div class="stand-column"><a href="https://www.google.com/chrome/browser/"><img src="../src/assets/chrome-logo.png" /></a></div>');
+      html.push('<div class="stand-column"><a href="https://www.mozilla.org/pt-BR/"><img src="../src/assets/firefox-logo.png" /></a></div>');
+      html.push('<div class="stand-column"><a href="http://www.opera.com/pt-br"><img src="../src/assets/opera-logo.png" /></a></div>');
+      html.push('</div></div>');
+      var target = document.getElementById('browser-update');
+      target.innerHTML = html.join('');
+      target.style.display = 'block';
     }
