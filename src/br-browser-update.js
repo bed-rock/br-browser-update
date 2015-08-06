@@ -40,10 +40,10 @@
     function pushHtml(){
       var html = [];
       html.push('<div class="modal-body">');
-      html.push('<h1>Ops!!</h1>');
-      html.push('<p>Lorem ipsum dolor sit amet</p>');
+      html.push('<h1>O seu navegador é antigo. =(</h1>');
+      html.push('<p>Para obter melhor eperiência de uso do sistema faça o download de um dos navegadores abaixo.</p>');
       html.push('<div class="stand-row">')
-      html.push(' <div class="stand-column"><a href="https://www.google.com/chrome/browser/"><img src="../src/assets/chrome-logo.png" /></a></div>');
+      html.push('<div class="stand-column"><a href="https://www.google.com/chrome/browser/"><img src="../src/assets/chrome-logo.png" /></a></div>');
       html.push('<div class="stand-column"><a href="https://www.mozilla.org/pt-BR/"><img src="../src/assets/firefox-logo.png" /></a></div>');
       html.push('<div class="stand-column"><a href="http://www.opera.com/pt-br"><img src="../src/assets/opera-logo.png" /></a></div>');
       html.push('</div></div>');
