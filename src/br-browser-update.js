@@ -1,5 +1,5 @@
-    function disableOldVersion(lowerThan){
-      pushHtml();
+    function disableWhenIeIsLowerThan(lowerThan){
+
       var currentBrowser = getCurrentBrowser();      
 
       browserSplit = currentBrowser.split(" ");
@@ -7,9 +7,12 @@
       
       if (browserSplit[0] == "MSIE" && browserSplit[1] < lowerThan) {
 
-        var modal = document.getElementById("browser-update");        
+        //var modal = document.getElementById("br-browser-update");        
+        var modal = document.getElementsByTagName('body')[0];
 
         modal.className = "modal";
+
+        pushHtml();
       };
 
     }
@@ -47,7 +50,10 @@
       html.push('<div class="stand-column"><a href="https://www.mozilla.org/pt-BR/"><img src="../src/assets/firefox-logo.png" /></a></div>');
       html.push('<div class="stand-column"><a href="http://www.opera.com/pt-br"><img src="../src/assets/opera-logo.png" /></a></div>');
       html.push('</div></div>');
-      var target = document.getElementById('browser-update');
+      //var target = document.getElementById("br-browser-update");
+      var target = document.getElementsByTagName('body')[0];
       target.innerHTML = html.join('');
       target.style.display = 'block';
     }
+
+    window.onload = disableWhenIeIsLowerThan(10);
