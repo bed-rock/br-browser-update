@@ -1,6 +1,6 @@
 {
   "name": "br-browser-update",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "homepage": "https://github.com/bed-rock/br-browser-update",
   "main": "br-browser-update.html",
   "keywords": [
@@ -16,5 +16,8 @@
     "src",
     "test",
     "tests"
-  ]
+  ],
+  "dependencies": {
+    "bedrock-base": "~1.0.0"  
+  }
 }
